@@ -85,8 +85,8 @@ void DeleteNumIndex(int* &ptr, int &size) {
 
 		j++;
 
-		if (newarr[i] == newarr[index - 2]) {
-			j++;
+		if (newarr[i] == newarr[index - 1]) {
+			newarr[i] = ptr[j];
 		}
 	}
 
